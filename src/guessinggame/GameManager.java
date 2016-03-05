@@ -11,12 +11,12 @@ import java.util.List;
  * 
  * @author Claudio Cusano
  */
-public class GuessingGame {
+public class GameManager {
 
     static int rounds = 5;
     PlayersRegistry registry;
     
-    GuessingGame() {
+    GameManager() {
         registry = new PlayersRegistry();
     }
     
@@ -74,7 +74,7 @@ public class GuessingGame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        GuessingGame game = new GuessingGame();
+        GameManager game = new GameManager();
         game.play();
     }
     

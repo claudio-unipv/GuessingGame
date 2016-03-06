@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package guessinggame;
 
 
 /**
- * A Player of the guessing game.
+ * An abstract player of the guessing game.
  * 
  * @author Claudio Cusano
  */

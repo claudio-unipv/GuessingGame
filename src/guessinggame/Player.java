@@ -46,7 +46,7 @@ abstract class Player
      * 
      * @return the chosen number.
      */
-    public abstract int chooseNumber();
+    public abstract int chooseSecretNumber();
 
     /**
      * Return the attempt of the player to guess the secret numbers
@@ -58,15 +58,19 @@ abstract class Player
     
     /**
      * Called after each round of the game to inform the player about
-     * the number of times that each number has been chosen by the players.
+     * the number of times that each number has been chosen and guessed by the
+     * players.
      * The player can use this information to adapt is strategy in choosing
      * and guessing number in the following rounds.
-     * counts[i] is the number of players that chose the number i in the last
+     * secretCounts[i] is the number of players that chose the number i in the last
      * round.
-     * 
-     * @param counts histogram of the secret numbers
+     * guessCounts[i] is the number of players that guessed the number i in the last
+     * round.
+     *  
+     * @param secretCounts histogram of the secret numbers
+     * @param guessCounts histogram of the guessed numbers
      */
-    public void lastRoundStatistics(int[] counts) {
+    public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
         // Do nothing by default.
     }    
 }

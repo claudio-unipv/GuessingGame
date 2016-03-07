@@ -17,7 +17,7 @@ public class RandomPlayer extends Player
     }
     
     @Override
-    public int chooseNumber()
+    public int chooseSecretNumber()
     {
         return randomGenerator.nextInt(10) + 1;
     }

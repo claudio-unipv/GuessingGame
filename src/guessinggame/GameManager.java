@@ -26,26 +26,37 @@ public class GameManager {
     void round()
     {
         List<Player> players = registry.getAllPlayers();
-        int[] counts = new int[11];
+        int[] secretCounts = new int[11];
+        int[] guessCounts = new int[11];
         int[] numbers = new int[players.size()];
         
+        // 1) Ask the secret numbers.
         for(int i = 0; i < players.size(); i++) {
-            int n = players.get(i).chooseNumber();
+            int n = players.get(i).chooseSecretNumber();
             if (n < 1)
                 n = 1;
             if (n > 10)
                 n = 10;
             numbers[i] = n;
-            counts[n]++;
+            secretCounts[n]++;
         }
             
+        // 2) Ask the guesses and assign the points.
         for(int i = 0; i < players.size(); i++) {
             int n = players.get(i).guessNumber();
-            int score = counts[n] * n;
-            if (numbers[i] == n)
-                score -= n;
-            players.get(i).addPoints(score);
-            players.get(i).lastRoundStatistics(counts);
+            if (n >= 1 && n <= 10) {
+                int score = secretCounts[n] * n;
+                // the player is not rewarded for guessing is own secret number
+                if (numbers[i] == n)
+                    score -= n;
+                players.get(i).addPoints(score);
+                guessCounts[n]++;
+            }            
+        }
+        
+        // 3) Notify the players about the statistics of the round.
+        for (Player player : players) {
+            player.lastRoundStatistics(secretCounts, guessCounts);
         }
     }
     

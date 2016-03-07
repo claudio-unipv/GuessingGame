@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="311" version="1.1" width="503" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="85" stroke="#ffffff" stroke-width="1" width="105" x="14" y="38"/>
+<rect fill="none" height="85" stroke="#000000" stroke-width="1" width="105" x="14" y="38"/>
+<text font-family="Dialog" font-size="12" x="21" y="51">
+GameManager</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="105" x="14" y="61"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="105" x="14" y="82"/>
+<text font-family="Dialog" font-size="12" x="18" y="96">
+play()</text>
+<text font-family="Dialog" font-size="12" x="18" y="112">
+main()</text>
+<rect fill="#ffffff" height="85" stroke="#ffffff" stroke-width="1" width="121" x="166" y="38"/>
+<rect fill="none" height="85" stroke="#000000" stroke-width="1" width="121" x="166" y="38"/>
+<text font-family="Dialog" font-size="12" x="171" y="51">
+PlayersRepository</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="121" x="166" y="61"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="121" x="166" y="82"/>
+<text font-family="Dialog" font-size="12" x="170" y="96">
+knownPlayers()</text>
+<text font-family="Dialog" font-size="12" x="170" y="112">
+getAllPlayers()</text>
+<rect fill="#ffffff" height="136" stroke="#ffffff" stroke-width="1" width="139" x="350" y="14"/>
+<rect fill="none" height="136" stroke="#000000" stroke-width="1" width="139" x="350" y="14"/>
+<text font-family="Dialog" font-size="12" font-style="italic" x="400" y="27">
+Player</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="139" x="350" y="37"/>
+<text font-family="Dialog" font-size="12" x="354" y="51">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="354" y="67">
+id : String</text>
+<text font-family="Dialog" font-size="12" x="354" y="83">
+score : int</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="139" x="350" y="93"/>
+<text font-family="Dialog" font-size="12" font-style="italic" x="354" y="107">
+guessNumber()</text>
+<text font-family="Dialog" font-size="12" font-style="italic" x="354" y="123">
+chooseSecretNumber()</text>
+<text font-family="Dialog" font-size="12" font-style="italic" x="354" y="139">
+lastRoundStatistics()</text>
+<rect fill="#ffffff" height="67" stroke="#ffffff" stroke-width="1" width="99" x="374" y="230"/>
+<rect fill="none" height="67" stroke="#000000" stroke-width="1" width="99" x="374" y="230"/>
+<text font-family="Dialog" font-size="12" x="379" y="243">
+RandomPlayer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="99" x="374" y="253"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="99" x="374" y="274"/>
+<polyline fill="none" points="422,230 422,149" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="422,149 429,161 415,161" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="422,149 429,161 415,161" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="286,86 350,86" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="324" y="81">
+0..*</text>
+<polyline fill="none" points="118,78 166,78" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="147" y="73">
+1</text>
+</svg>

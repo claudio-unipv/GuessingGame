@@ -10,19 +10,30 @@ package guessinggame;
  * @author cl417039
  */
 public class Giocatore417039 extends Player{
-    
+    private int numero=0; 
     public Giocatore417039(){
         super("Calicchio","417039");
     }
 
     @Override
     public int chooseSecretNumber() {
-    return 9;
+    if(numero==0){return 9;}
+    if(numero==1){return 10;}
+    if(numero==2){return 9;}
+    if(numero==3){return 8;}
+    else{return 10;}
     }
 
     @Override
     public int guessNumber() {
-        return 9;
+        if(numero==0){return 9;}
+    if(numero==1){return 10;}
+    if(numero==2){return 9;}
+    if(numero==3){return 8;}
+    else{return 10;}
     }
     
+    public void lastRoundStatistics(int[] secretCounts, int guessCounts[]){
+        numero++;
+    }
 }

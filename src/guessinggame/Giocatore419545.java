@@ -5,6 +5,8 @@
  */
 package guessinggame;
 
+import static java.lang.Math.round;
+
 /**
  *
  * @author Alexandra Cucumetti
@@ -14,13 +16,28 @@ public class Giocatore419545 extends Player {
     public Giocatore419545() {
         super("Alexandra", "419545");
     }
-
+ private int round;
     public int chooseSecretNumber() {
-        return 7;
-        }
+     return 4;
+    }
 
     public int guessNumber() {
-        return 7;
+          switch(round){
+            case(1):
+                return 9;
+            case(2):
+                return 10;
+            case(3):
+                return 9;
+            case(4):
+                return 8;
+            default:
+                return 10;
+               
+        }
        }
     
+      public void lastRoundStatistics(int[] secretCounts, int guessCounts[]){
+        round++;
+    }
 }

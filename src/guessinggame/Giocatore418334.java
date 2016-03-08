@@ -21,41 +21,15 @@ private int numero = 0;
     
     @Override
     public int chooseSecretNumber() {
-       if (numero == 0) {
-            return 9;
-        }
-        if (numero == 1) {
-            return 10;
-        }
-        if (numero == 2) {
-            return 9;
-        }
-        if (numero == 3) {
-            return 8;
-        }else {
-            return 10;
-        }
+       return 2;
     
     
     }
 
     @Override
     public int guessNumber() {
+        return 1;
 
-if (numero == 0) {
-            return 9;
-        }
-        if (numero == 1) {
-            return 10;
-        }
-        if (numero == 2) {
-            return 9;
-        }
-        if (numero == 3) {
-            return 8;
-        }else {
-            return 10;
-        }
     
     
     }

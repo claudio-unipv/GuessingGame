@@ -5,19 +5,23 @@
  */
 package guessinggame;
 
+import java.util.Random;
+
 /**
  *
  * @author User
  */
 public class Player401571 extends Player{
 
+    private Random r;
+    
     public Player401571() {
         super("Albertini", "401571");
     }
 
     @Override
     public int chooseSecretNumber() {
-        return 5;
+        return 1+r.nextInt(10);
     }
 
     @Override

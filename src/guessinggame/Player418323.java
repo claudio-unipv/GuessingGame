@@ -25,14 +25,14 @@ public class Player418323 extends Player{
     public int chooseSecretNumber() {
         
         
-        return 5;
+        return 9;
         
     }
 
     @Override
     public int guessNumber() {
         
-        return 6;
+        return 9;
         
     }
     

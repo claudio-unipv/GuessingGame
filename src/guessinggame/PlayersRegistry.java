@@ -51,7 +51,7 @@ class PlayersRegistry {
         players.add(new Giocatore418334());
         players.add(new Giocatore410597());
         
-        // players.add(new Player417757());
+      
         return players;
     }
 }

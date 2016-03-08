@@ -21,14 +21,14 @@ private int numero = 0;
 
     public int chooseSecretNumber() {
         
-return 5;        
+return 10;        
         
     }
 
     public int guessNumber() {
         
         
-return 5;
+return 10;
         
         }
     

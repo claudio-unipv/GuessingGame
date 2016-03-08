@@ -5,48 +5,29 @@
  */
 package guessinggame;
 
+import java.util.Random;
+
 /**
  *
  * @author User
  */
 public class Player401571 extends Player{
 
-    int scores_;
+    private Random r;
     
     public Player401571() {
         super("Albertini", "401571");
-    }
-    
-        /// Return the name of the player
-    public String name() {
-        return name_;
-    }
-    
-    /// Return the identifier of the player.
-    public String identifier() {
-        return id_;
-    }
-    
-    /// Return the current score of the player
-    public int score()
-    {
-        return score_;
-    }
-    
-    /// Increase the score by the given number of points
-    public void addPoints(int points)
-    {
-        score_ += points;
+        r= new Random();
     }
 
     @Override
     public int chooseSecretNumber() {
-        return 5;
+        return r.nextInt(5)+1;
     }
 
     @Override
     public int guessNumber() {
-        return 5;
+        return 8;
     }
     
     

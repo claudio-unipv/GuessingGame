@@ -54,4 +54,3 @@ class PlayersRegistry {
       
         return players;
     }
-}

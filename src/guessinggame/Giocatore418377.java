@@ -16,7 +16,7 @@ public class Giocatore418377 extends Player{
     Random randomGenerator;
     
     Giocatore418377() {
-        super("pannolone pulla", "418377");
+        super("random perdende", "418377");
         randomGenerator = new Random();
     }
     

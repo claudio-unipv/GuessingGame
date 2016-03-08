@@ -3,6 +3,7 @@ package guessinggame;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Comparator;
 
 /**
  * Keep a list of known players.
@@ -24,7 +25,14 @@ class PlayersRegistry {
     
     /// Sort players by decreasing score.
     public void sortPlayers() {
-        Collections.sort(players, (Player p1, Player p2) -> p2.score() - p1.score());
+        Comparator<Player> comp 
+                          = new Comparator<Player>()  {
+
+	    public int compare(Player p1, Player p2) {
+                return p2.score() - p1.score();
+            }
+        };
+        Collections.sort(players, comp);
     }
     
     /// Return a list of players.

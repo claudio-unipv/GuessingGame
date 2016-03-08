@@ -17,11 +17,12 @@ public class Player401571 extends Player{
     
     public Player401571() {
         super("Albertini", "401571");
+        r= new Random();
     }
 
     @Override
     public int chooseSecretNumber() {
-        return 1+r.nextInt(5);
+        return r.nextInt(5)+1;
     }
 
     @Override

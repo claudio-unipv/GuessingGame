@@ -78,13 +78,14 @@ public class PlayerTest {
         
         // 3) print the final ranking
         for (int p = 0; p < players.size(); p++)
-            gamer.put(players.get(p).name() ,players.get(p).score());
+            if(!gamer.containsKey(players.get(p).name())){
+                gamer.put(players.get(p).name() ,players.get(p).score());
+            }else{
+                gamer.put(players.get(p).name() ,gamer.get(players.get(p).name())+players.get(p).score());
+            }
     }
 
-    public HashMap<String, Integer> getGamer() {
-        return gamer;
-    }
-    
+
         
     /**
      * Initialize and run the game.
@@ -92,12 +93,12 @@ public class PlayerTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        GameManager game = new GameManager();
+        PlayerTest game = new PlayerTest();
         for(int i=0;i<20;i++){
             game.play();
         }
-        for(String nome:game.getGamer()){
-            
+        for(String nome:game.gamer.keySet()){
+            System.out.println(nome+"\t"+game.gamer.get(nome));
         }
     }
     

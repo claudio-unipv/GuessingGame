@@ -40,6 +40,7 @@ class PlayersRegistry {
         ArrayList<Player> players = new ArrayList<>();
         
         players.add(new RandomPlayer());
+	players.add(new AdaptivePlayer());
         players.add(new Player401571());
         players.add(new Giocatore421357());
         players.add(new Giocatore411161());

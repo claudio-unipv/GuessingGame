@@ -40,9 +40,21 @@ class PlayersRegistry {
         ArrayList<Player> players = new ArrayList<>();
         
         players.add(new RandomPlayer());
-        
-        // New players should be added here...
-        
+        players.add(new Player401571());
+        players.add(new Giocatore421357());
+        players.add(new Giocatore411161());
+        players.add( new Giocatore418635());
+        players.add(new Giocatore419545());
+        players.add(new Giocatore418646());
+        players.add(new Giocatore418723());
+        players.add(new Player417757());
+        players.add(new Giocatore418334());
+        players.add(new Player421572());
+        players.add(new Player419842());
+      
+        players.add(new Giocatore418377());
+        players.add(new Giocatore418574());
+        players.add(new Player418576());
         return players;
     }
 }

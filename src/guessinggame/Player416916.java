@@ -52,7 +52,7 @@ public class Player416916 extends Player{
                 min = guessCounts[i];
                 numero = i+1;  }            
         }
-        chosenGuess = numero;
+        chosenSecret = numero;
         
         //System.out.println(numero);
         
@@ -64,7 +64,7 @@ public class Player416916 extends Player{
                 max = secretCounts[i];
                 numero = i+1;  }     
         }
-        chosenSecret = numero;
+        chosenGuess = numero;
 
         //System.out.println(numero);
         

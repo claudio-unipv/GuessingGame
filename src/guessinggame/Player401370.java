@@ -11,18 +11,47 @@ package guessinggame;
  */
 public class Player401370 extends Player{
 
+    int guess=9;
+    int round =1;
+    
     public Player401370() {
         super("Del Buono", "401370");
     }
 
     @Override
     public int chooseSecretNumber() {
-        return 2;
+        return 1;
     }
 
     @Override
     public int guessNumber() {
-        return 10;
+        
+        switch(round){
+            case(1):
+                return 9;
+            case(2):
+                return 10;
+            case(3):
+                return 9;
+            case(4):
+                return 8;
+            default:
+                return 10;
+               
+        }
     }
     
+    @Override
+    public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
+//        int max=0,j=0;
+//        for(int i=1; i<secretCounts.length; i++){
+//            if (secretCounts[i]*i>max) {
+//                max = secretCounts[i] * i;
+//                j=i;
+//            }
+//        }
+//        guess = j;
+        
+        round++;
+    }
 }

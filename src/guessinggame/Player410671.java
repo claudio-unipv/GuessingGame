@@ -25,7 +25,7 @@ public class Player410671 extends Player{
 
     @Override
     public int guessNumber() {
-        if(true)
+        if(round==0)
             return 1;
         
         int tmp[] = new int[11];
@@ -49,26 +49,8 @@ public class Player410671 extends Player{
 
     @Override
     public int chooseSecretNumber() {
-        if(round==0)
-            return 1;
         
-        int tmp[] = new int[11];
-        int secret = 10;
-        int min = 0;
-        
-        for(int[] vet:secretNumber){
-            for(int i=0;i<vet.length;i++){
-                tmp[i] += vet[i];
-            }
-        }
-        
-        for(int i=0;i<tmp.length;i++){
-            if(tmp[i]<min)
-                min = tmp[i];
-                secret = i;
-        }
-        
-        return secret;
+        return 1;
     }
     @Override
     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {

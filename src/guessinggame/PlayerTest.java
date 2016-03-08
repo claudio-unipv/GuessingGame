@@ -97,9 +97,14 @@ public class PlayerTest {
         for(int i=0;i<20;i++){
             game.play();
         }
+        int max=0;
         for(String nome:game.gamer.keySet()){
             System.out.println(nome+"\t"+game.gamer.get(nome));
+            if(game.gamer.get(nome)>max){
+                max = game.gamer.get(nome);
+            }
         }
+        System.out.println(max);
     }
     
 }

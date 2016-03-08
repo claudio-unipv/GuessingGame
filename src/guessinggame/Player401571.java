@@ -14,12 +14,12 @@ import java.util.Random;
 public class Player401571 extends Player{
 
     private Random r;
-    private int max;
-    
+    private int guessed;
+
     public Player401571() {
         super("Albertini", "401571");
         r = new Random();
-        max=1;
+        guessed=1;
         //System.out.println(r.nextInt(5)+1);
     }
 
@@ -31,22 +31,29 @@ public class Player401571 extends Player{
 
     @Override
     public int guessNumber() {
-        return getMax();
+        return getGuessed();
     }
 
     @Override
     public void lastRoundStatistics(int[] secretCounts, int[] guessCounts) {
-        for (int i = 0; i < secretCounts.length; i++) {
-            System.out.println(secretCounts[i]);
-            if(secretCounts[i]>max){
-                max=secretCounts[i];
+        int product;
+        int maxProduct=0;
+        for (int i = 1; i < secretCounts.length; i++) {
+            product=i*secretCounts[i];
+            if(product>maxProduct){
+                setGuessed(i);
             }
+                
         }
-       
+        
     }
 
-    public int getMax() {
-        return max;
+    public void setGuessed(int guessed) {
+        this.guessed = guessed;
+    }
+
+    public int getGuessed() {
+        return guessed;
     }
 
 }

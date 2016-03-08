@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class Player419842 extends Player{
     
-    private int to_guess;
+    public int to_guess;
     
 
     public Player419842() {
@@ -22,22 +22,26 @@ public class Player419842 extends Player{
 
     @Override
     public int chooseSecretNumber() {
-        int[] arr = {1,2,1,1,3,2,1,4,1};
+        int[] arr = {2,1};
         int rnd = new Random().nextInt(arr.length);
         return arr[rnd];
     }
 
     @Override
     public int guessNumber() {
+        if(to_guess==0){
+            to_guess=10;
+        }
+        System.out.println(to_guess);
         return to_guess;
     }
     
     @Override
     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
         int max = 0;
-        int number_to_guess = 0;
+        int number_to_guess=10;
         for (int i=0;i<secretCounts.length;i++){
-            if (secretCounts[i]<max){
+            if (secretCounts[i]>max){
                 max=secretCounts[i];
                 number_to_guess = i;
             }

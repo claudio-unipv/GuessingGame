@@ -12,6 +12,8 @@ import java.util.Random;
  */
 public class Player416916 extends Player{
     
+    private int chosenGuess;
+    private int chosenSecret;
     Random randomGen;
     
     Player416916(){
@@ -25,7 +27,7 @@ public class Player416916 extends Player{
  * @return the chosen number.
  */
     public int chooseSecretNumber(){
-        return 3;
+        return chosenSecret;
     }
 
 /**
@@ -35,11 +37,37 @@ public class Player416916 extends Player{
  * @return the guessed number.
  */
     public int guessNumber(){
-        return randomGen.nextInt(10) + 1;
+        //return randomGen.nextInt(10) + 1;
+        return chosenGuess;
     }
     
     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
-      //       
+       
+        //Sceglie come prossimo numero personale quello scelto di meno all fine dell'ultimo round
+        int numero = 1;
+        int min = 100;
+        for(int i=0; i<guessCounts.length; i++){
+            //System.out.println("conteggio" + guessCounts[i]);
+            if (guessCounts[i] < min){
+                min = guessCounts[i];
+                numero = i+1;  }            
+        }
+        chosenGuess = numero;
+        
+        //System.out.println(numero);
+        
+        //Sceglie come prossimo numero da indovinare quello scelto di più dagli altri nell'ultimo round
+        int max = 0;
+        for(int i=0; i<secretCounts.length; i++){
+            //System.out.println("conteggio" + secretCounts[i]);
+            if (secretCounts[i] > max){
+                max = secretCounts[i];
+                numero = i+1;  }     
+        }
+        chosenSecret = numero;
+
+        //System.out.println(numero);
+        
     }   
     
 }

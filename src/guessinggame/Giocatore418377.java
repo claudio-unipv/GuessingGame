@@ -39,7 +39,7 @@ public class Giocatore418377 extends Player{
     
     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
         
-        int max=secretCounts[0]*1;
+        int max=secretCounts[1]*1;
         c1=1;
         for(int i=1;i<secretCounts.length;i++){
             if(max<secretCounts[i]*i){
@@ -48,10 +48,10 @@ public class Giocatore418377 extends Player{
             }
         }
         
-        int min=guessCounts[0]*1;
+        int min=guessCounts[1]*1;
         g1=1;
         for(int i=1;i<guessCounts.length;i++){
-            if(min<guessCounts[i]*i){
+            if(min>guessCounts[i]*i){
                 min=guessCounts[i]*i;
                 g1=i;
             }

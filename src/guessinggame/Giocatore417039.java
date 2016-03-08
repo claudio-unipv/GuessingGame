@@ -22,7 +22,6 @@ public class Giocatore417039 extends Player{
     if(numero==2){return 9;}
     if(numero==3){return 8;}
     else{return 10;}
-    
     }
 
     @Override

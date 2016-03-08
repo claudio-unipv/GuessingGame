@@ -18,11 +18,11 @@ public class Giocatore418723 extends Player {
     }
 
     public int chooseSecretNumber() {
-        return 1;
+        return 9;
     }
 
     public int guessNumber() {
-        return 9;
+        return 10;
     }
     
     

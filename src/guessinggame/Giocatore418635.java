@@ -7,7 +7,7 @@ package guessinggame;
 
 /**
  *
- * @author cl419545
+ * @author Andrea Cavagna
  */
 public class Giocatore418635 extends Player {
 
@@ -23,5 +23,10 @@ public class Giocatore418635 extends Player {
 
     public int guessNumber() {
       return 5;  }
+    
+    @Override
+       public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
+     
+       }   
     
 }

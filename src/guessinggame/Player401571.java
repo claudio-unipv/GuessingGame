@@ -13,58 +13,42 @@ import java.util.Random;
  */
 public class Player401571 extends Player{
 
-    private int numero = 0;
+    int guess=9;
+    int round =1;
+    private Random r;
 
     public Player401571() {
         super("Albertini", "401571");
+        r = new Random();
     }
-    
+
     @Override
     public int chooseSecretNumber() {
-       if (numero == 0) {
-            return 9;
-        }
-        if (numero == 1) {
-            return 10;
-        }
-        if (numero == 2) {
-            return 9;
-        }
-        if (numero == 3) {
-            return 8;
-        }else {
-            return 10;
-        }
-    
-    
+        return r.nextInt(3)+1;
     }
-
+    
+    
     @Override
     public int guessNumber() {
-
-if (numero == 0) {
-            return 9;
+        
+        switch(round){
+            case(1):
+                return 9;
+            case(2):
+                return 10;
+            case(3):
+                return 9;
+            case(4):
+                return 8;
+            default:
+                return 10;
+               
         }
-        if (numero == 1) {
-            return 10;
-        }
-        if (numero == 2) {
-            return 9;
-        }
-        if (numero == 3) {
-            return 8;
-        }else {
-            return 10;
-        }
-    
-    
     }
     
-     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
-        
-
-        numero ++;            
-            
-    } 
+    @Override
+    public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
+        round++;
+    }
 
 }

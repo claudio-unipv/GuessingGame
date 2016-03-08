@@ -13,12 +13,24 @@ import static guessinggame.GameManager.rounds;
  */
 public class Giocatore418723 extends Player {
     
+    private int numero = 0;
+
     public Giocatore418723() {
         super("bhutani", "418723");
     }
 
     public int chooseSecretNumber() {
-        return 9;
+        if (numero == 0) {
+            return 9;
+        }
+        if (numero == 1) {
+            return 10;
+        } else {
+            return 0;
+
+        }
+
+
     }
 
     public int guessNumber() {

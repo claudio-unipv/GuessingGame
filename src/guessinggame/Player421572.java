@@ -23,13 +23,13 @@ public class Player421572 extends Player {
     public int chooseSecretNumber()
     {
 //        return randomGenerator.nextInt(10) + 1;
-        return 10;
+        return 9;
     }
     
     @Override
     public int guessNumber()
     {
 //        return randomGenerator.nextInt(10) + 1;
-        return 10;
+        return 9;
     }
 }

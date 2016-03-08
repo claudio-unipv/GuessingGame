@@ -25,7 +25,7 @@ public class Player417757 extends Player{
     if(numero==0){return 9;}
     if(numero==1){return 10;}
     if(numero==2){return 9;}
-    if(numero==3){return 9;}
+    if(numero==3){return 8;}
     else{return 10;
     }}
 
@@ -34,7 +34,7 @@ public class Player417757 extends Player{
     if(numero==0){return 9;}
     if(numero==1){return 10;}
     if(numero==2){return 9;}
-    if(numero==3){return 9;}
+    if(numero==3){return 8;}
     else{return 10;}
     
     

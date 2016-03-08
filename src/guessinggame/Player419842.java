@@ -16,7 +16,7 @@ public class Player419842 extends Player{
     private int to_guess;
     
 
-    public Player419842(String the_name, String the_id) {
+    public Player419842() {
         super("Luca", "419842");
     }
 

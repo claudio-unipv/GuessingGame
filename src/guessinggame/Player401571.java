@@ -13,22 +13,58 @@ import java.util.Random;
  */
 public class Player401571 extends Player{
 
-    private Random r;
-    
+    private int numero = 0;
+
     public Player401571() {
         super("Albertini", "401571");
-        r = new Random();
-        //System.out.println(r.nextInt(5)+1);
     }
-
+    
     @Override
     public int chooseSecretNumber() {
-        return r.nextInt(5)+1;
-        //return 10;
+       if (numero == 0) {
+            return 9;
+        }
+        if (numero == 1) {
+            return 10;
+        }
+        if (numero == 2) {
+            return 9;
+        }
+        if (numero == 3) {
+            return 8;
+        }else {
+            return 10;
+        }
+    
+    
     }
 
     @Override
     public int guessNumber() {
-        return 10;
+
+if (numero == 0) {
+            return 9;
+        }
+        if (numero == 1) {
+            return 10;
+        }
+        if (numero == 2) {
+            return 9;
+        }
+        if (numero == 3) {
+            return 8;
+        }else {
+            return 10;
+        }
+    
+    
     }
+    
+     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
+        
+
+        numero ++;            
+            
+    } 
+
 }

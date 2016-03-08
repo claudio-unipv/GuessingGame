@@ -7,33 +7,22 @@ package guessinggame;
 
 /**
  *
- * @author cl417757
+ * @author cl417039
  */
-public class Player417757 extends Player{
-   
-
-    public Player417757() {
-        super("previtali","417757");
+public class Giocatore417039 extends Player{
+    
+    public Giocatore417039(){
+        super("Calicchio","417039");
     }
-
-    
-
-    
 
     @Override
     public int chooseSecretNumber() {
-    return 0;
-    
-    
+    return 10;
     }
 
     @Override
     public int guessNumber() {
-     return 10;
-    
-    
-    
+        return 10;
     }
-    
     
 }

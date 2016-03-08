@@ -12,7 +12,7 @@ package guessinggame;
 public class Giocatore421357 extends Player {
     
     Giocatore421357() {
-        super("Zichittella perdente", "421357");
+        super("Zichittella", "421357");
     }
     
     @Override

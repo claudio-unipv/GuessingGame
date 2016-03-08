@@ -31,7 +31,7 @@ public class Giocatore421357 extends Player {
     public int guessNumber() {
        if (roundc2==0){
            roundc2++;
-           return 7;
+           return 9;
            
        }
        else{                

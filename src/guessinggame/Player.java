@@ -1,6 +1,5 @@
 package guessinggame;
 
-
 /**
  * An abstract player of the guessing game.
  * 

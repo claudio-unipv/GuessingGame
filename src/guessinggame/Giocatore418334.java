@@ -34,13 +34,13 @@ return 10;
     
     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
         
-        for(int i = 0; i<10 ; i++){
-            System.out.println(secretCounts[i]);
-        }
-        System.out.println("Partita " + numero);
-        numero ++;
-
-            
+//        for(int i = 0; i<10 ; i++){
+//            System.out.println(secretCounts[i]);
+//        }
+//        System.out.println("Partita " + numero);
+//        numero ++;
+//
+//            
             
     } 
     

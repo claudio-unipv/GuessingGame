@@ -22,42 +22,14 @@ public class Player421572 extends Player {
     
     @Override
     public int chooseSecretNumber() {
-       if (numero == 0) {
-            return 9;
-        }
-        if (numero == 1) {
-            return 10;
-        }
-        if (numero == 2) {
-            return 9;
-        }
-        if (numero == 3) {
-            return 8;
-        }else {
-            return 10;
-        }
+        return 4;
     
     
     }
 
     @Override
     public int guessNumber() {
-
-if (numero == 0) {
-            return 9;
-        }
-        if (numero == 1) {
-            return 10;
-        }
-        if (numero == 2) {
-            return 9;
-        }
-        if (numero == 3) {
-            return 8;
-        }else {
-            return 10;
-        }
-    
+        return 1;
     
     }
     

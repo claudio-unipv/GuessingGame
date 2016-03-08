@@ -51,11 +51,16 @@ class PlayersRegistry {
         players.add(new Giocatore418334());
         players.add(new Player421572());
         players.add(new Player419842());
-      
+        players.add(new Player401370());
         players.add(new Giocatore418377());
         players.add(new Giocatore418574());
         players.add(new Player418576());
         players.add(new Giocatore418824());
+        players.add(new Player417797());
+        players.add(new Player416916());
+        players.add(new Giocatore417039());
+        players.add(new Giocatore410688());
+        players.add(new Giocatore416993());
         players.add(new Player410671());
         return players;
     }

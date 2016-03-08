@@ -13,6 +13,7 @@ import java.util.Random;
  */
 public class Player421572 extends Player {
     Random randomGenerator;
+    private int numero = 0;
     
     public Player421572() {
         super("Avarino", "421572");
@@ -20,16 +21,53 @@ public class Player421572 extends Player {
     }
     
     @Override
-    public int chooseSecretNumber()
-    {
-//        return randomGenerator.nextInt(10) + 1;
-        return 9;
+    public int chooseSecretNumber() {
+       if (numero == 0) {
+            return 9;
+        }
+        if (numero == 1) {
+            return 10;
+        }
+        if (numero == 2) {
+            return 9;
+        }
+        if (numero == 3) {
+            return 8;
+        }else {
+            return 10;
+        }
+    
+    
+    }
+
+    @Override
+    public int guessNumber() {
+
+if (numero == 0) {
+            return 9;
+        }
+        if (numero == 1) {
+            return 10;
+        }
+        if (numero == 2) {
+            return 9;
+        }
+        if (numero == 3) {
+            return 8;
+        }else {
+            return 10;
+        }
+    
+    
     }
     
-    @Override
-    public int guessNumber()
-    {
-//        return randomGenerator.nextInt(10) + 1;
-        return 9;
-    }
+     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
+        
+
+        numero ++;            
+            
+    } 
+    
+    
+    
 }

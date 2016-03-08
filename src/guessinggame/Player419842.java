@@ -22,14 +22,13 @@ public class Player419842 extends Player{
 
     @Override
     public int chooseSecretNumber() {
-        int[] arr = {2,1};
+        int[] arr = {1,2};
         int rnd = new Random().nextInt(arr.length);
         do
         {
             rnd = new Random().nextInt(arr.length);
-            System.out.println("evito..." +number_to_avoid);
             if (number_to_avoid==0){
-                number_to_avoid=1;
+                number_to_avoid=2;
             }
         }while(number_to_avoid==rnd);
         return rnd;
@@ -40,7 +39,6 @@ public class Player419842 extends Player{
         if(to_guess==0){
             to_guess=10;
         }
-        System.out.println("indovino..."+to_guess);
         return to_guess;
     }
     

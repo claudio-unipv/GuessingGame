@@ -9,9 +9,9 @@ package guessinggame;
  *
  * @author Miky
  */
-class Player418574_ extends Player {
+class Player418574 extends Player {
 
-    public Player418574_() {
+    public Player418574() {
     
         super("michelachinosi01", "418574");
     }

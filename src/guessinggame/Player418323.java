@@ -24,17 +24,15 @@ public class Player418323 extends Player{
     @Override
     public int chooseSecretNumber() {
         
-        System.out.println("\nInserisci il numero segreto: ");
-         input = new Scanner(System.in);
-        return input.nextInt();
+        
+        return 5;
         
     }
 
     @Override
     public int guessNumber() {
-        System.out.println("\nInserisci il numero da indovinare: ");
-        input = new Scanner(System.in);
-        return input.nextInt() ;
+        
+        return 6;
         
     }
     

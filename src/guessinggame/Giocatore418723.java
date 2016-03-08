@@ -5,23 +5,27 @@
  */
 package guessinggame;
 
+import static guessinggame.GameManager.rounds;
+
 /**
  *
- * @author cl419545
+ * @author cl418723
  */
-public class Giocatore418635 extends Player {
-
-    public Giocatore418635() {
-        super("Cavagna", "418635");
+public class Giocatore418723 extends Player {
+    
+    public Giocatore418723() {
+        super("bhutani", "418723");
     }
-    
-    
 
     public int chooseSecretNumber() {
-        return 6;
+        if (rounds < 2) {
+            return 1;
+        }else return 5;
     }
 
     public int guessNumber() {
-      return 5;  }
+        return 5;
+    }
+    
     
 }

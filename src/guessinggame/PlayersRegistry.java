@@ -41,6 +41,7 @@ class PlayersRegistry {
         
         players.add(new RandomPlayer());
         players.add(new Player401571());
+        players.add(new Giocatore421357());
  
         return players;
     }

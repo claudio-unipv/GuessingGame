@@ -19,30 +19,52 @@ public class Player417757 extends Player{
     
 
     
-
-    @Override
+@Override
     public int chooseSecretNumber() {
-    if(numero==0){return 9;}
-    if(numero==1){return 10;}
-    if(numero==2){return 9;}
-    if(numero==3){return 8;}
-    else{return 10;
-    }}
+       if (numero == 0) {
+            return 9;
+        }
+        if (numero == 1) {
+            return 10;
+        }
+        if (numero == 2) {
+            return 9;
+        }
+        if (numero == 3) {
+            return 8;
+        }else {
+            return 10;
+        }
+    
+    
+    }
 
     @Override
     public int guessNumber() {
-    if(numero==0){return 9;}
-    if(numero==1){return 10;}
-    if(numero==2){return 9;}
-    if(numero==3){return 8;}
-    else{return 10;}
-    
+
+if (numero == 0) {
+            return 9;
+        }
+        if (numero == 1) {
+            return 10;
+        }
+        if (numero == 2) {
+            return 9;
+        }
+        if (numero == 3) {
+            return 8;
+        }else {
+            return 10;
+        }
     
     
     }
     
-    public void LastRoundStatistic(int [] secrectCounts, int guessCount[] ){
-        numero++;
-    }
+     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
+        
+
+        numero ++;            
+            
+    } 
     
 }

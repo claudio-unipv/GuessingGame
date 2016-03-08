@@ -18,6 +18,7 @@ public class Giocatore418824 extends Player{
     int varianza;
     int mediaguess;
     int varianzaguess;
+    int numgiocatori = 0;
     public Giocatore418824() {
         super("Amato", "418824");
         randomGenerator = new Random();
@@ -26,7 +27,7 @@ public class Giocatore418824 extends Player{
     
     @Override
     public int chooseSecretNumber() {
-        if(mediaguess == 0){
+        if(mediaguess == 0 || varianzaguess == 0){
        return randomGenerator.nextInt(10) + 1;
         }
         else {
@@ -40,13 +41,15 @@ public class Giocatore418824 extends Player{
 
     @Override
     public int guessNumber() {
-         if(media == 0 || varianza == 0){
+         if(media == 0){
        return randomGenerator.nextInt(10) + 1;
         }
+         else if (varianza == 0)
+             return media;
         else {
             int a = media - (varianza/2);
             int b = media + (varianza/2);
-            return randomGenerator.nextInt(1 + varianza/4)+ a;
+            return randomGenerator.nextInt(1 + varianza)+ a;
             //return mediaguess;
         }
         
@@ -58,25 +61,26 @@ public class Giocatore418824 extends Player{
             int esp;
             int sommaguess = 0;
             int numguess;
-            for( int m : secretCounts) {
-            somma += m;
+            for( int i = 0 ; i < secretCounts.length; i ++) {
+            somma += i * secretCounts[i];
+            numgiocatori += secretCounts[i];
         }
-            media = somma/ secretCounts.length;
+            media = somma/ numgiocatori;
             for ( int i= 0 ; i < secretCounts.length ; i ++){
                 num = secretCounts[i] - media;
             }
             esp = num * num;
-            varianza = esp/ (secretCounts.length - 1);
+            varianza = esp/ (numgiocatori - 1);
             
-             for( int m : guessCounts) {
-            somma += m;
+             for( int i = 0 ; i < guessCounts.length; i ++) {
+            sommaguess += i*secretCounts[i];
         }
-            mediaguess = somma/ guessCounts.length;
+            mediaguess = somma/ numgiocatori;
             for ( int i= 0 ; i < guessCounts.length ; i ++){
-                num = guessCounts[i] - media;
+                num = guessCounts[i] - mediaguess;
             }
             esp = num * num;
-            varianzaguess = esp/ (guessCounts.length - 1);
+            varianzaguess = esp/ (numgiocatori - 1);
     }  
         
 }

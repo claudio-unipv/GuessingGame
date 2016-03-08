@@ -40,13 +40,13 @@ public class Giocatore418824 extends Player{
 
     @Override
     public int guessNumber() {
-         if(media == 0){
+         if(media == 0 || varianza == 0){
        return randomGenerator.nextInt(10) + 1;
         }
         else {
             int a = media - (varianza/2);
             int b = media + (varianza/2);
-            return randomGenerator.nextInt(1+varianza)+ a;
+            return randomGenerator.nextInt(varianza)+ a;
         }
         
     }

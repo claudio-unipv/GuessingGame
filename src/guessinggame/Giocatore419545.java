@@ -16,7 +16,7 @@ public class Giocatore419545 extends Player {
     }
 
     public int chooseSecretNumber() {
-        return 3;
+        return 7;
         }
 
     public int guessNumber() {

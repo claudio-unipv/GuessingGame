@@ -46,7 +46,8 @@ public class Giocatore418824 extends Player{
         else {
             int a = media - (varianza/2);
             int b = media + (varianza/2);
-            return randomGenerator.nextInt(varianza)+ a;
+            return randomGenerator.nextInt(varianza/5)+ a;
+            //return mediaguess;
         }
         
     }

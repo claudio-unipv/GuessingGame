@@ -7,7 +7,7 @@ package guessinggame;
 
 /**
  *
- * @author cl421357
+ * @author Riccardo
  */
 public class Giocatore421357 extends Player {
     

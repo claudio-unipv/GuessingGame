@@ -25,7 +25,7 @@ public class Player410671 extends Player{
 
     @Override
     public int guessNumber() {
-        if(round==0)
+        if(true)
             return 1;
         
         int tmp[] = new int[11];

@@ -17,7 +17,7 @@ public class Giocatore421357 extends Player {
     
     @Override
     public int chooseSecretNumber() {
-        return 1;
+        return 2;
     }
 
     @Override

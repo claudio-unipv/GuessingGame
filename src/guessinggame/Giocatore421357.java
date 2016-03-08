@@ -19,12 +19,12 @@ public class Giocatore421357 extends Player {
     @Override
     public int chooseSecretNumber() {
         
-        return 8;
+        return 3;
     }
 
     @Override
     public int guessNumber() {
-       return 2;
+       return 10;
     }
     
     

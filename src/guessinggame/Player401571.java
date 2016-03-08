@@ -19,7 +19,7 @@ public class Player401571 extends Player{
     public Player401571() {
         super("Albertini", "401571");
         r = new Random();
-        guessed=1;
+        guessed=9;
         //System.out.println(r.nextInt(5)+1);
     }
 
@@ -41,6 +41,7 @@ public class Player401571 extends Player{
         for (int i = 1; i < secretCounts.length; i++) {
             product=i*secretCounts[i];
             if(product>maxProduct){
+                maxProduct=product;
                 setGuessed(i);
             }
                 

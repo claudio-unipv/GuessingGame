@@ -13,17 +13,18 @@ public class Giocatore421357 extends Player {
     
     Giocatore421357() {
         super("Zichittella", "421357");
+        
     }
     
     @Override
     public int chooseSecretNumber() {
         
-        return 3;
+        return 8;
     }
 
     @Override
     public int guessNumber() {
-       return 8;
+       return 2;
     }
     
     

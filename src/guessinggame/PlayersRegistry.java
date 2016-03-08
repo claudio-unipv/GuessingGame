@@ -40,9 +40,8 @@ class PlayersRegistry {
         ArrayList<Player> players = new ArrayList<>();
         
         players.add(new RandomPlayer());
-        
-        // New players should be added here...
-        
+        players.add(new Player401571());
+ 
         return players;
     }
 }

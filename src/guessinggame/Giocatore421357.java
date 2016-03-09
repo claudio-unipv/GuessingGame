@@ -75,7 +75,7 @@ public class Giocatore421357 extends Player {
         
         for(int i = 0; i<10 ; i++){
             pesato2[i]=(i+1)*secretCounts[i];
-            System.out.println("pesato "+(i+1)+"   :"+pesato2[i]+"secret coutns :"+secretCounts[i]);
+            // System.out.println("pesato "+(i+1)+"   :"+pesato2[i]+"secret coutns :"+secretCounts[i]);
   
             if(i==0){
                 num1=pesato2[i];

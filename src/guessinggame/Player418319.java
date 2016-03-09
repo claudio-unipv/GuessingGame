@@ -18,10 +18,6 @@ public class Player418319 extends Player {
    private Random rand;
    private int n;
     
-    
-    
-  
-    
     public  Player418319(){
         
         
@@ -46,14 +42,6 @@ public class Player418319 extends Player {
     
     
     public void lastRoundStatistics(int[] secretCounts, int guessCounts[]) {
-        
-        for(int i = 0; i<10 ; i++){
-            System.out.println(secretCounts[i]);
-        }
-        System.out.println("Partita " + n);
         n++;
-    
-    
-    
-}
+    }
 }

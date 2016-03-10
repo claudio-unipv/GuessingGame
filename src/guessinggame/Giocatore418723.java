@@ -5,8 +5,6 @@
  */
 package guessinggame;
 
-import static guessinggame.GameManager.rounds;
-
 /**
  *
  * @author cl418723
